@@ -1,212 +1,77 @@
 <!DOCTYPE html>
-<html lang="kr" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>RUBYSPACE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-     minimum-scale=1, maximum-scale=1, user-scalable=yes">
-    <style media="screen">
+    <title>test</title>
+    <style>
     a {
       color: white;
       text-decoration: none;
-      padding-left, right: 10px;
+      padding: 10px 10px;
     }
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 40px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #1B1B1B;
+      padding: 20px;
+      background-color: #000000;
     }
     footer {
       display: flex;
-      padding: 50px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      background-color: #1B1B1B;
+      padding: 20px 50px;
+      background-color: #000000;
       justify-content: center;
     }
-    .ro_links {
+    .link {
       list-style: none;
+      padding-left: 0px;
     }
-    .ro_links li{
+    .link li{
       display: inline-block;
       padding: 0px 20px;
-    }
-    .ro_links li a{
-      transition: all 0.3s ease 0s:
-    }
-    .ro_links li a:hover {
-      color: #00E6FF
     }
     button {
       padding: 9px 25px;
       background-color: rgba(255, 119, 0, 1);
       border: none;
       border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease 0s:
     }
-    button:hover {
-      background-color: rgba(255, 119, 0, 0.8);
+    .con {
+      padding: 20px 50px;
     }
-    .ham {
-      display: none;
+    .tit {
+      font-size: 50px;
+      text-align: center;
+      border-bottom: black 3px solid;
+      margin-bottom: 20px;
     }
-    .navibox {
-      display: none;
-      position: absolute;
-      right: 2rem;
-      top: 60px;
-      width: 300px;
-      padding-left: none;
-      background-color: rgba(20, 20, 20, 1);
-      overflow: hidden;
-    }
-    .navibox li {
-      list-style: none;
-      padding: 0.7rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-     }
-     .navibox.open{
-      display: block;
-      }
-      ul {
-    padding-inline-start: 0px;
-     }
-     .angks {
-       text-align: center;
-       font-size: 40px;
-       padding-top: 150px;
-       padding-bottom: 150px;
-     }
-     .scroll{
-      font-size: 12px;
-      padding-top: 80px;
-      padding-bottom: 0px;
-     }
-     .con1{
-       padding-top: 100px;
-     }
-    @media(max-width: 650px) {
-      .navibox{
-        display: none;
-      }
-      .combutton{
-        display: none;
-      }
-      .ro_links{
-        display: none;
-      }
-      a img {
-        content: url('logo.jpg');
-      }
-      .ham {
-      position: relative;
-      width: 30px;
-      height: 24px;
-      cursor: pointer;
-      display: block;
-      }
-      .ham span, .ham span:before, .ham span:after {
-      position: absolute;
-      content: '';
-      height: 4px;
-      background-color: white;
-      display: block;
-      transition: all 0.2s ease;
-      }
-      .ham span {
-      top: 50%;
-      width: 100%;
-      transform: translateY(-50%);
-      transition: 0.3s
-      }
-      .ham span:before {
-      top: -10px;
-      width: 100%;
-      transition: 0.3s
-      }
-      .ham span:after {
-      bottom: -10px;
-      width: 100%;
-      transition: 0.3s
-      }
-      .ham.active span {
-      background-color: transparent;
-      }
-      .ham.active span:before {
-      top: 0;
-      transform: rotate(45deg);
-      }
-      .ham.active span:after {
-      top: 0;
-      transform: rotate(-45deg);
-      }
-      .angks {
-        text-align: center;
-        font-size: 30px;
-        padding-top: 130px;
-        padding-bottom: 130px;
-      }
+    img {
+      text-align: center;
+      margin-bottom: 20px;;
     }
     </style>
   </head>
-  <body style="background-color:#222222; color:white; margin:0px;">
+  <body>
     <header>
-      <a href="index.html"><img src="logo.jpg" alt="루비스페이스" width="120"></a>
-      <ob>
-        <ul class="ro_links">
-          <li><a href="engine.html">엔진</a></li>
-          <li><a href="pad.html">발사대</a></li>
-          <li><a href="launch.html">발사체</a></li>
+        <a>사이트 제목/a>
+        <ul class="link">
+         <li><a href="1.html">첫번째</a></li>
+         <li><a href="2.html">두번째</a></li>
+         <li><a href="3.html">세번째</a></li>
         </ul>
-      </ob>
-      <div class="combutton">
-        <button onclick="location.href='book.html'">예약</button>
-      </div>
-      <div class="ham">
-        <span><span>
-      </div>
-     <div class="navibox">
-       <ul>
-       <li><a href="engine.html">엔진</a></li>
-       <li><a href="pad.html">발사대</a></li>
-       <li><a href="launch.html">발사체</a></li>
-       <li><a href="book.html"><button>예약</button></a></li>
-       </ul>
-     </div>
+        <button onclick="location.href='book.html'">홈</button>
    </header>
-   <div class="angks">
-   무한한 세계의 첫시작<br>
-   루비스페이스
-   <div class="scroll">
-     더 많은 정보를 보시려면<br>
-     아래로 내리세요.
-   </div>
-   <div class="con1">
-     -
-   </div>
-   </div>
+    <div class="con">
+      <div class="tit">
+       (대충 제목)
+      </div>
+      <div class="tex">
+        <img src="(대충 사진 링크)" width="100%">
+        (대충 긴 이야기)
+      </div>
+    </div>
    <footer>
-     <div class="foot">
-       <a href="index.html"><img src="logo.jpg" alt="루비스페이스" width="100"></a>
-     </div>
+       <a href="index.html">아래</a>
    </footer>
- </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
-     </script>
-      <script>
-        $(document).ready(function(){
-          $('.ham').click(function(){
-             $(this).toggleClass('active');
-             $('.navibox').toggleClass('open');
-        });
-        });
-      </script>
   </body>
 </html>
